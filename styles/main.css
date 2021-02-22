@@ -1,0 +1,83 @@
+body{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.container{
+    background-image: url(/pista-de-tenis-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    width: 850px;
+    height: 53vh;
+    overflow: hidden;
+}
+.tennis-ball
+{
+    /* width: 60px; */
+    position: relative;
+    animation: tennis 3s infinite alternate;
+    animation-timing-function: cubic-bezier(1, 1, 1, 1);
+    /* transform: rotate(90deg); */
+}
+.tennis-ball::after{
+    content: '';
+    position: absolute;
+
+}
+
+@keyframes tennis-ball {
+    50% {
+      transform: rotate(0deg);
+    }
+    
+    55%{
+      transform: rotate(90deg);
+    }
+  }
+  
+
+@keyframes tennis
+{
+    0% {
+        top:10vh;
+        left: 0px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    
+    30% {
+        top: 50vh;
+        left: 200px;
+        width: 70px;
+        height: 40px;
+        
+    }  
+    
+    50% {
+        top: 10vh;
+        left: 400px;
+        width: 70px;
+        height: 70px;
+    }    
+    80% {
+        top: 50vh;
+        left: 600px;
+        width: 70px;
+        height: 35px;
+
+    }    
+    100% {
+        top: 10vh;
+        left: 800px;
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
